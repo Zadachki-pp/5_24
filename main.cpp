@@ -183,8 +183,6 @@ int main() {
     std::cout << std::endl;
     std::cout << matrix2 << std::endl;
     std::cout << std::endl;
-    std::cout << matrix2 << std::endl;
-    std::cout << std::endl;
 
 
     std::cout << "Multiply (*)" << std::endl;
