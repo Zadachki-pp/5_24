@@ -63,7 +63,7 @@ public:
         }
     }
 
-    Matrix<T, M, N>& operator+=(const Matrix<T, M, N>& other) {
+    Matrix& operator+=(const Matrix& other) {
         for(size_t i = 0; i < M; i++){
             for(size_t j = 0; j < N; j++) {
                 _matrix[i][j] += other._matrix[i][j];
@@ -73,7 +73,7 @@ public:
         return *this;
     }
 
-    Matrix<T, M, N> operator*=(T number) {
+    Matrix operator*=(T number) {
         for(size_t i = 0; i < M; i++){
             for(size_t j = 0; j < N; j++) {
                 _matrix[i][j] *= number;
@@ -100,7 +100,7 @@ public:
         return new_matrix;
     }
 
-    Matrix<T, M, N> operator+(const Matrix<T, M, N>& other) {
+    Matrix operator+(const Matrix& other) {
         Matrix copy(*this);
         copy += other;
 
