@@ -147,6 +147,7 @@ public:
     }
 };
 
+
 template <typename T, size_t M, size_t N>
 std::ostream& operator<<(std::ostream& out, Matrix<T, M, N>& matrix) {
     for(size_t i = 0; i < M; i++) {
