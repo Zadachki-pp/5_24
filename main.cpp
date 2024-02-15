@@ -170,6 +170,7 @@ std::istream& operator>>(std::istream& in, Matrix<T, M, N>& matrix) {
     return in;
 }
 
+
 int main() {
     Matrix<int, 2, 3> matrix1{};
     matrix1.randomize();
