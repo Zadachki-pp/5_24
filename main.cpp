@@ -41,7 +41,7 @@ public:
         _copy_matrix_from(other._matrix);
     }
 
-    Matrix<T, M, N>& operator=(const Matrix<T, M, N>& other) {
+    Matrix& operator=(const Matrix& other) {
         if (this == &other) {
             return *this;
         }
